@@ -21,6 +21,8 @@ app.UseSwaggerUI(); //disply interface
 
 app.UseStaticFiles();
 
+app.UseCors("CorsPolicy");
+
 app.UseAuthorization();
 
 app.MapControllers();
